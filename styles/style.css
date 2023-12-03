@@ -1,5 +1,107 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
+  width: 375px;     /*явно как то надо задать на весь макет общую ширину. */
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+.decorated-zone {
+  display: flex;
+  width: 375px;
+  height: 668px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0
+
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--general-content-color);
+  font-family: IBM Plex Mono;
+  font-size: var(--general-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--general-size);
+  text-transform: lowercase;
+
+}
+
+  .header__theme-menu {
+  display: flex;
+  justify-content: end;
+  }
+
+  .header__theme-menu-list{
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+
+}
+
+.header__title {  /*задал стиль тексту (из фигмы). */
+  color: var(--title-color);
+  text-shadow: var(--general-content-color) 4px 4px 0px;
+  font-family: IBM Plex Mono;
+  font-size: var(--title-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%; 
+
+}
+
+.header__text {
+  font-family: IBM Plex Mono;
+  font-size: var(--general-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; 
+  color: var(--focus-color);
+  background-color: var(--general-content-color);
+}
+
+.container {
+  background-color: var(--focus-color);
+}
+
+
+.main__title {
+  color: var(--general-content-color);
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.main__title_answer {
+  background-color: var(--general-content-color)
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.main__text {
+  color: var(--text-color);
+
+  font-family: IBM Plex Mono;
+  font-size: var(--general-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px
+
 }
