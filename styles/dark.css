@@ -3,12 +3,12 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+.page {
+  background-color: var(--focus-color);
+}
 
 .decorated-zone {
 background-image: url(../images/cover-image-dark.png);
-
-
-
 }
 
 .page.theme_dark {
