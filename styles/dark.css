@@ -1,19 +1,35 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-.page {
-  background-color: var(--focus-color);
+:root {
+  --text-color:#F1B2CE;
+  --general-content-color:#FF0070;
+  --title-color:#DB00FF;
+  --focus-color:#000028;
+  --general-content-color-shadow:#FF0070;
+  --header-background: url(../images/cover-image-dark.png);
+  --button-color: var(--general-content-color);
+  --dark-sub-title: var(--focus-color);
+  --background-color: var(--focus-color);
 }
 
-.decorated-zone {
-background-image: url(../images/cover-image-dark.png);
+.header {
+  background-image: var(--header-background);
+  background-position: 50% 100%;
 }
 
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+ color: var(--text-color);
+ background-color: var(--background-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color:#F1B2CE;
+    --general-content-color:#FF0070;
+    --title-color:#DB00FF;
+    --focus-color:#000028;
+    --general-content-color-shadow:#FF0070;
+    --header-background: url(../images/cover-image-dark.png);
+    --button-color: var(--general-content-color);
+    --dark-sub-title: var(--focus-color);
+    --background-color: var(--focus-color);
+  }
 }

@@ -1,14 +1,6 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
---text-color: #F1B2CE;
---general-content-color:#FF0070;
---title-color: #DB00FF;
---focus-color: #000028;
-
---general-size: 18px;
---title-size:116px;
-
+  --general-size: 18px;
+  --title-size:116px;
+  --planchete-title-size:120px;
+  --pc-title-size:157px;
 }

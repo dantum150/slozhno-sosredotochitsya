@@ -1,12 +1,65 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+:root {
+--main-text:#353430;
+--general-content-color-shadow:#FF0070;
+--light-main-title-color:#FFC2E6;
+--light-main-color:#FF8DCB;
+--light-background:#FFF1F7;
+}
+
+.page {
+background-color: var(--focus-color);
+}
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --background-color: var(--light-background);
+  background-color: var(--background-color);
+}
+
+.page.theme_light .header {
+  --hedaer-background:  url(../images/cover-image-light.png);
+}
+
+.page.theme_light .header__text {
+color: var(--focus-color);
+background-color: var(--light-main-color);
+}
+
+.page.theme_light button {
+  --button-color: var(--main-text);
+}
+
+.page.theme_light .header__text, .page.theme_light .section__title {
+  color: var(--main-text);
+}
+
+.page.theme_light .header__label {
+  display: none;
+}
+
+.page.theme_light .decorated-zone::before, .page.theme_light .decorated-zone::after {
+--general-content-color: var(--main-text);  
+/* можно задать им отдельную переменную */
+}
+
+.page.theme_light .section__container {
+  --text-color: var(--main-text);
+  color: var(--main-text);
+}
+
+.page.theme_light .section__subtitle {
+  background-color: var(--light-main-color);
+}
+
+.page.theme_light .footer__title {
+  color: var(--light-main-title-color);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-text:#353430;
+    --general-content-color-shadow:#FF0070;
+    --light-main-title-color:#FFC2E6;
+    --light-main-color:#FF8DCB;
+    --light-background:#FFF1F7;
+    }
 }
