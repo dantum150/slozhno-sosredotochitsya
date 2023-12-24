@@ -14,7 +14,7 @@
   background-image: var(--header-background);
   background-position: 50% 100%;
 }
-
+  
 .page.theme_dark {
  color: var(--text-color);
  background-color: var(--background-color);
