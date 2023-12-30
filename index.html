@@ -12,17 +12,24 @@
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
     <link rel="icon" href="./images/favicon.svg" type="image/x-icon" />
+
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
     <title>Сложно сосредоточиться</title>
   </head>
   <body class="page">
     <header class="header decorated-zone">
+
+      <div class="header__label ">
+        <span aria-hidden="true">
+          REC
+        </span>
+        <div class="hedaer__square"></div>
+      </div>
+
       <nav class="header__theme-menu">
-        <div class="header__label">
-          <span aria-hidden="true">
-            REC
-          </span>
-          <div class="hedaer__square"></div>
-        </div>
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
             <button class="header__theme-menu-button header__theme-menu-button_type_light">
@@ -131,9 +138,9 @@
         </h3>
 
         <div class="section__description">
-          <h3 class="section__subtitle subtitle__weigth">
+          <h4 class="section__subtitle subtitle__weigth">
             Представьте небо и облака
-          </h3>
+          </h4>
 
           <p class="section__text">
             Или листья в ручье. Тут дело в лёгкой медитации, которая помогает успокоиться. Ведь часто именно тревожные мысли о сложных задачах как раз и мешают эти сложные задачи делать. В такие моменты можно закрыть глаза и представить,
@@ -143,9 +150,9 @@
         </div>
 
         <div class="section__description">
-          <h3 class="section__subtitle subtitle__weigth">
+          <h4 class="section__subtitle subtitle__weigth">
             Включите музыку
-          </h3>
+          </h4>
 
           <p class="section__text">
             Но не любую, и не любимую. Любимая может быть связана с сильными положительными эмоциями, которые тоже очень сильно отвлекают. Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще попробовать включить плейлист в «белым
@@ -154,9 +161,9 @@
         </div>
 
         <div class="section__description">
-          <h3 class="section__subtitle subtitle__weigth">
+          <h4 class="section__subtitle subtitle__weigth">
             Прогуляйтесь
-          </h3>
+          </h4>
 
           <p class="section__text">
             Или даже пробегитесь. Лучше найти парк или лес: один эксперимент <a class="section__text_link" target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328/ ">показал</a>, что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с
@@ -165,9 +172,9 @@
         </div>
 
         <div class="section__description">
-          <h3 class="section__subtitle subtitle__weigth">
+          <h4 class="section__subtitle subtitle__weigth">
             Хорошо ешьте
-          </h3>
+          </h4>
 
           <p class="section__text">
             Мы — не ваша бабушка, но это правда важно. Выбирайте продукты, которые препятствуют резким скачкам сахара в крови. Например, с высоким содержанием клетчатки: овощи, ягоды, бобовые (нут, чечевица, фасоль), коричневый рис, хлеб из
@@ -175,9 +182,9 @@
           </p>
         </div>
         <div class="section__description">
-          <h3 class="section__subtitle subtitle__weigth">
+          <h4 class="section__subtitle subtitle__weigth">
             Читайте
-          </h3>
+          </h4>
 
           <p class="section__text">
             Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы прочитать пост в соцсети, достаточно нескольких минут или даже секунд. А вот интересная книга способна затянуть и на несколько часов и круто тренирует
@@ -212,9 +219,9 @@
     </main>
 
     <footer class="footer decorated-zone">
-      <span class="footer__title">
+      <h2 class="footer__title">
         focus
-      </span>
+      </h2>
     </footer>
 
     <script src="./scripts/script.js"></script>
