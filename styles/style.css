@@ -10,6 +10,8 @@
   display: flex;
   
   height: 668px;
+
+  /* height: 100vh (75.5vh чтобы вьюпорт подставить под пиксель перфект); */
   
   padding: 10px;
   flex-direction: column;
@@ -34,17 +36,16 @@
   right: 10px;
 }
 
-.hedaer__square {
+.header__label::after {
+  content: "";
   border-top: 1px solid var(--general-content-color);
   border-right: 1px solid var(--general-content-color);
   width: 25.038px;
   height: 24.999px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
 
-.hedaer__square::before {
+.header__label::before {
   content: "";
   display: block;
   width: 9px;
@@ -53,41 +54,37 @@
   border-radius: 50%;
   background-color: var(--general-content-color);
   box-shadow: 0 0 4px 2px var(--general-content-color);
-  filter: drop-shadow(0px 0px 6px);
+
+  /* filter: drop-shadow(0px 0px 6px);  с учетом макета получается 0 0 4px*/
+
+  filter:drop-shadow(0px 0px 4px var(--general-content-color-shadow));
+
+  position: absolute;
+  right: 9px;
+  top: 9px;
+
 }
 
 .header {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: max-content max-content max-content max-content;
+  grid-template-rows: max-content max-content max-content;
   transition: 1s;
   grid-template-areas:
-    "right__angle"
     "nav"
     "title"
-    "text"
-    "left__angle";
+    "text" ;
 
 
     background-image: var(--header-background);
     background-position: 50% 100%;
     
     background-size: cover;
+    padding-top: 34px;
 }
 
-.header::after {
-  content: "";
-  display: block;
-  width: 25px;
-  height: 25px;
-  flex-shrink: 0;
-  border-left: 1px solid var(--general-content-color);
-  border-bottom: 1px solid var(--general-content-color);
-  margin-top: 30px;
-}
-
-button {
-  padding: 0;
+.header__theme-menu-button {
+  padding: 3.5px 13px;
   border: none;
   font: inherit;
   color: var(--button-color);
@@ -100,10 +97,17 @@ button {
   line-height: var(--general-size);
   text-transform: lowercase;
   transition: 1s;
+  outline: 1px solid transparent;
 }
 
-.header__theme-menu-button {
-  padding: 3.5px 13px;
+.header__theme-menu-button:hover {
+  color: #FF0070;
+  outline: 1px solid  rgba(255, 0, 112, 0.40);
+}
+
+.header__theme-menu-button:focus {
+ 
+  border-bottom: 1px solid  rgba(255, 0, 112, 0.40);
 }
 
 .header__theme-menu-button_active {
@@ -138,7 +142,7 @@ button {
 }
 
 .header__text {
-  font-family: IBM Plex Mono;
+  font-family: "IBM Plex Mono", "Arial", sans-serif;
   font-size: var(--general-size);
   font-style: normal;
   font-weight: 700;
@@ -237,17 +241,6 @@ img {
     "left__angle";
 }
 
-.decorated-zone::before {
-  content: "";
-  display: block;
-  border-top: 1px solid var(--general-content-color);
-  border-right: 1px solid var(--general-content-color);
-  width: 25.038px;
-  height: 24.999px;
-  justify-self: flex-end;
-  grid-area: right__angle;
-}
-
 .decorated-zone::after {
   content: "";
   display: block;
@@ -255,7 +248,9 @@ img {
   border-left: 1px solid var(--general-content-color);
   width: 25.038px;
   height: 24.999px;
-  grid-area: left__angle;
+ position: absolute;
+ bottom: 10px;
+ left:10px;
 }
 
 .footer__title {
@@ -269,35 +264,27 @@ img {
   line-height: 82.5%;
 }
 
-/* Мобильная верися */
-@media screen and (min-width: 375px) {
-  .page {
-    min-width: 375px;
-  }
-}
 
 /* Верися для планшета */
 @media screen and (min-width: 768px) {
   .page {
-    min-width: 768px;
+    
     gap: 60px;
   }
 
   .decorated-zone {
-    padding: 20px 20px 20px 0;
+    padding: 45px 20px 20px 0;
     height: 1024px;
   }
 
   .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, max-content);
     grid-template-areas:
-      ". right__angle"
+      
       ". nav"
       "title title"
-      ". text"
-      "left__angle .";
+      ". text";
     column-gap: 20px;
   }
 
@@ -311,8 +298,8 @@ img {
   }
 
   .decorated-zone::after {
-    margin-left: 20px;
-    margin-top: 138px;
+    left: 20px;
+    bottom: 19px;
   }
 
   .header__title {
@@ -411,9 +398,6 @@ img {
     height: 768px;
   }
 
-  .header::after {
-    margin-top: 91px;
-  }
 
   .header__theme-menu {
     justify-content: center;
