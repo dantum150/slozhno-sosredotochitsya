@@ -5,6 +5,7 @@
   gap: 40px;
   transition: 1s;
   font-family: "IBM Plex Mono", "Arial", sans-serif;
+  background-attachment: fixed;
 }
 
 .decorated-zone {

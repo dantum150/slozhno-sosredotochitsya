@@ -4,7 +4,7 @@
   --title-color:#DB00FF;
   --focus-color:#000028;
   --general-content-color-shadow:#FF0070;
-  --header-background: url(../images/cover-image-dark.png);
+  --dark-background: url(../images/cover-image-dark.png);
   --button-color: var(--general-content-color);
   --dark-sub-title: var(--focus-color);
   --background-color: var(--focus-color);
@@ -15,6 +15,10 @@
   background-position: 50% 100%;
 } */
   
+.page .theme_dark  {
+  background-image: var(--dark-background);
+}
+
 .page.theme_dark {
  color: var(--text-color);
  background-color: var(--background-color);
