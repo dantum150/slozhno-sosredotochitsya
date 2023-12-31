@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 40px;
   transition: 1s;
+  font-family: "IBM Plex Mono", "Arial", sans-serif;
 }
 
 .decorated-zone {
@@ -25,7 +26,7 @@
   display: flex;
   color: var(--general-content-color);
   text-align: center;
-  font-family: "IBM Plex Mono", "Arial", sans-serif;
+  
   font-size: var(--general-size);
   font-style: normal;
   font-weight: 400;
@@ -54,8 +55,6 @@
   border-radius: 50%;
   background-color: var(--general-content-color);
   box-shadow: 0 0 4px 2px var(--general-content-color);
-
-  /* filter: drop-shadow(0px 0px 6px);  с учетом макета получается 0 0 4px*/
 
   filter:drop-shadow(0px 0px 4px var(--general-content-color-shadow));
 
@@ -90,7 +89,7 @@
   color: var(--button-color);
   background-color: transparent;
   cursor: pointer;
-  font-family: "IBM Plex Mono", "Arial", sans-serif;
+  
   font-size: var(--general-size);
   font-style: normal;
   font-weight: 400;
@@ -112,6 +111,7 @@
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--button-color);
+  pointer-events: none;
 }
 
 .header__theme-menu {
@@ -131,7 +131,7 @@
 .header__title {
   color: var(--title-color);
   text-shadow: var(--general-content-color-shadow) 4px 4px 0px;
-  font-family: "IBM Plex Mono", "Arial", sans-serif;
+  
   font-size: var(--title-size);
   font-style: normal;
   font-weight: 700;
@@ -142,7 +142,7 @@
 }
 
 .header__text {
-  font-family: "IBM Plex Mono", "Arial", sans-serif;
+
   font-size: var(--general-size);
   font-style: normal;
   font-weight: 700;
@@ -169,7 +169,7 @@
 
 .section__title {
   color: var(--general-content-color);
-  font-family: "IBM Plex Mono", "Arial", sans-serif;
+  
   font-size: var(--general-size);
   font-style: normal;
   font-weight: 700;
@@ -185,7 +185,7 @@
 .section__subtitle {
   color: var(--dark-sub-title);
   background-color: var(--general-content-color);
-  font-family: "IBM Plex Mono", "Arial", sans-serif;
+  
   font-size: var(--general-size);
   font-style: normal;
   font-weight: 700;
@@ -194,7 +194,7 @@
 
 .section__text {
   color: var(--text-color);
-  font-family: "IBM Plex Mono", "Arial", sans-serif;
+ 
   font-size: var(--general-size);
   font-style: normal;
   font-weight: 400;
@@ -257,7 +257,7 @@ img {
   color: var(--title-color);
   grid-area: title__footer;
   text-shadow: 2px 2px 0px var(--general-content-color-shadow);
-  font-family: "IBM Plex Mono", "Arial", sans-serif;
+  
   font-size: var(--title-size);
   font-style: normal;
   font-weight: 700;
