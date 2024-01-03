@@ -290,7 +290,6 @@ img {
   .header {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      
       ". nav"
       "title title"
       ". text";
@@ -401,17 +400,12 @@ img {
   }
 
   .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, max-content);
     grid-template-areas:
-      ". right__angle"
       "nav nav"
       "title title"
-      ". text"
-      "left__angle .";
+      ". text";
     column-gap: 20px;
-
+    padding: 10px 19px 20px 0;
   }
 
 
@@ -426,7 +420,6 @@ img {
 
   .header__theme-menu-list {
     flex-direction: row;
-    margin-block-start: -26px;
     padding-left: 18px;
   }
   .header__title {
