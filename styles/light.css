@@ -11,7 +11,7 @@
 background-color: var(--focus-color);
 }
 
-.theme_light .page {
+.theme_light.page {
 background-image: var(--light-background-image);
 }
 

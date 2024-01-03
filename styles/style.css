@@ -6,21 +6,18 @@
   transition: 1s;
   font-family: "IBM Plex Mono", "Arial", sans-serif;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .decorated-zone {
   display: flex;
-  
-  height: 668px;
-
-  /* height: 100vh (75.5vh чтобы вьюпорт подставить под пиксель перфект); */
-  
   padding: 10px;
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
   position: relative;
   justify-content: space-between;
+  min-height: 100vh;
 }
 
 .header__label {
@@ -74,13 +71,8 @@
     "nav"
     "title"
     "text" ;
-
-
-    background-image: var(--header-background);
-    background-position: 50% 100%;
-    
-    background-size: cover;
     padding-top: 34px;
+    
 }
 
 .header__theme-menu-button {
@@ -166,6 +158,12 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+
+.section__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:20px;
 }
 
 .section__title {
@@ -269,17 +267,14 @@ img {
 /* Верися для планшета */
 @media screen and (min-width: 768px) {
   .page {
-    
     gap: 60px;
   }
 
   .decorated-zone {
     padding: 45px 20px 20px 0;
-    height: 1024px;
   }
 
   .header {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       
@@ -323,19 +318,26 @@ img {
 
   .section__container {
     grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "title ."
+    "cards cards";
   }
 
-  .section__container:nth-child(odd) .section__description {
-    grid-column: 2;
+  .section__title {
+    grid-area: title;
   }
-
-  .section__container:nth-child(even) .section__description {
-    grid-column: 2 span;
-  }
-
+  
+    .section__cards {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap:20px;
+      grid-area: cards;
+    }
+  
   .section__container_img {
     gap: 20px;
   }
+
 
   .section__imgs {
     grid-template-columns: repeat(3, 1fr);
@@ -423,16 +425,17 @@ img {
   .section__container {
     column-gap: 20px;
     row-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .section__container:nth-child(odd) .section__description {
-    grid-column: 2/4;
-  }
-  .section__container:nth-child(even) .section__description {
-    grid-column: 1 span;
-    grid-row: 2;
-  }
+    .section__title {
+    grid-area: title;
+    }
+  
+    .section__cards {
+      
+      grid-template-columns: repeat(3, 1fr);
+      grid-area: cards;
+    }
 
   .section__subtitle {
     grid-column: 2/4;

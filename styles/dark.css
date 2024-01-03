@@ -15,7 +15,7 @@
   background-position: 50% 100%;
 } */
   
-.page .theme_dark  {
+.page.theme_dark  {
   background-image: var(--dark-background);
 }
 
