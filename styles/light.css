@@ -1,24 +1,5 @@
-/* :root {
---main-text:#353430;
---general-content-color-shadow:#FF0070;
---light-main-title-color:#FFC2E6;
---light-main-color:#FF8DCB;
---light-background:#FFF1F7;
---light-background-image: url(../images/cover-image-light.png);
-} */
-
-.page {
-background-color: var(--focus-color);
-}
-
-.theme_light.page {
-background-image: var(--light-background-image);
-}
-
 .page.theme_light {
   --background-color: var(--light-background);
-  background-color: var(--background-color);
-
   --button-color: var(--light-text-color);
   --button-hover-color: var(--light-opacity-main-color);
   --toggle-color:transparent;
@@ -26,55 +7,28 @@ background-image: var(--light-background-image);
   --general-content-color: var(--light-main-color);
   --title-color: var(--light-title-color);
   --corner-color:var(--light-text-color);
+  --section-title:var(--light-text-color);
+  --color-subtitle:var(--light-text-color);
+  --section-text-color:var(--light-text-color);
+  --background-image:url(../images/cover-image-light.png);
+  --background-color: var(--light-main-background);
   
-}
-
-/* .page.theme_light .header__title {
-  --title-color: var(--light-title-color);
-}
-
-.page.theme_light .header__text {
-color: var(--focus-color);
-background-color: var(--light-main-color);
-}
-
-.page.theme_light button {
-  --button-color: var(--main-text);
-}
-
-.page.theme_light .header__text, .page.theme_light .section__title {
-  color: var(--main-text);
-}
-
-.page.theme_light .header__label {
-  display: none;
-}
-
-
-
-.page.theme_light .section__container {
-  --text-color: var(--main-text);
-  color: var(--main-text);
-}
-
-.page.theme_light .section__text_link {
-  text-shadow: 2px 2px 0px var(--light-main-color);
-}
-
-.page.theme_light .section__subtitle {
-  background-color: var(--light-main-color);
-}
-
-.page.theme_light .footer__title {
-  color: var(--light-main-title-color);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-text:#353430;
-    --general-content-color-shadow:#FF0070;
-    --light-main-title-color:#FFC2E6;
-    --light-main-color:#FF8DCB;
-    --light-background:#FFF1F7;
+    --background-color: var(--light-background);
+  --button-color: var(--light-text-color);
+  --button-hover-color: var(--light-opacity-main-color);
+  --toggle-color:transparent;
+  --toggle-color-shadow: transparent;
+  --general-content-color: var(--light-main-color);
+  --title-color: var(--light-title-color);
+  --corner-color:var(--light-text-color);
+  --section-title:var(--light-text-color);
+  --color-subtitle:var(--light-text-color);
+  --section-text-color:var(--light-text-color);
+  --background-image:url(../images/cover-image-light.png);
+  --background-color: var(--light-main-background);
     }
-} */
+} 
