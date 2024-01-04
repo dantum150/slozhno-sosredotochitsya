@@ -12,8 +12,6 @@
   --section-text-color:var(--dark-text-color);
   --background-image:url(../images/cover-image-dark.png);
   --background-color: var(--dark-subtitle-color);
-  
-  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,6 +29,5 @@
     --section-text-color:var(--dark-text-color);
     --background-image:url(../images/cover-image-dark.png);
     --background-color: var(--dark-subtitle-color);
-    
   }
 }

@@ -11,8 +11,7 @@
   --color-subtitle:var(--light-text-color);
   --section-text-color:var(--light-text-color);
   --background-image:url(../images/cover-image-light.png);
-  --background-color: var(--light-main-background);
-  
+  --background-color: var(--light-main-background); 
 }
 
 @media (prefers-color-scheme: light) {
