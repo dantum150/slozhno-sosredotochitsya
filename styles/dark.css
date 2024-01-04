@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --text-color:#F1B2CE;
   --general-content-color:#FF0070;
   --title-color:#DB00FF;
@@ -8,13 +8,25 @@
   --button-color: var(--general-content-color);
   --dark-sub-title: var(--focus-color);
   --background-color: var(--focus-color);
-}
+} */
 
 /* .header {
   background-image: var(--header-background);
   background-position: 50% 100%;
 } */
   
+.page.theme_dark {
+  --title-color: var(--dark-title-color);
+  --general-content-color-shadow: var(--dark-main-color);
+  --button-color: var(--dark-main-color);
+  --button-hover-color: var(--drak-opacity-main-color);
+  --toggle-color: var(--dark-main-color);
+  --toggle-color-shadow: var(--dark-main-color);
+  --corner-color: var(--dark-main-color);
+  --focus-color: var(--dark-subtitle-color);
+  --general-content-color:var(--dark-main-color);
+}
+
 .page.theme_dark  {
   background-image: var(--dark-background);
 }

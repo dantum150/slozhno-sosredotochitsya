@@ -1,11 +1,11 @@
-:root {
+/* :root {
 --main-text:#353430;
 --general-content-color-shadow:#FF0070;
 --light-main-title-color:#FFC2E6;
 --light-main-color:#FF8DCB;
 --light-background:#FFF1F7;
 --light-background-image: url(../images/cover-image-light.png);
-}
+} */
 
 .page {
 background-color: var(--focus-color);
@@ -18,10 +18,19 @@ background-image: var(--light-background-image);
 .page.theme_light {
   --background-color: var(--light-background);
   background-color: var(--background-color);
+
+  --button-color: var(--light-text-color);
+  --button-hover-color: var(--light-opacity-main-color);
+  --toggle-color:transparent;
+  --toggle-color-shadow: transparent;
+  --general-content-color: var(--light-main-color);
+  --title-color: var(--light-title-color);
+  --corner-color:var(--light-text-color);
+  
 }
 
-.page.theme_light .header__title {
-  --title-color: var(--light-main-title-color);
+/* .page.theme_light .header__title {
+  --title-color: var(--light-title-color);
 }
 
 .page.theme_light .header__text {
@@ -41,10 +50,7 @@ background-color: var(--light-main-color);
   display: none;
 }
 
-.page.theme_light .decorated-zone::before, .page.theme_light .decorated-zone::after {
---general-content-color: var(--main-text);  
-/* можно задать им отдельную переменную */
-}
+
 
 .page.theme_light .section__container {
   --text-color: var(--main-text);
@@ -71,4 +77,4 @@ background-color: var(--light-main-color);
     --light-main-color:#FF8DCB;
     --light-background:#FFF1F7;
     }
-}
+} */
