@@ -1,16 +1,4 @@
-:root {
-  --dark-main-color:#FF0070;
-  --dark-title-color: #DB00FF;
-  --dark-text-color: #F1B2CE;
-  --drak-opacity-main-color: rgba(255, 0, 112, 0.40);
-  --dark-subtitle-color: #000028;
-
-  --light-text-color: #353430;
-  --light-main-color:#FF8DCB;
-  --light-title-color: #FFC2E6;
-  --light-opacity-main-color:rgba(50, 49, 45, 0.40);
-  --light-main-background: #FFF1F7;
-  
+:root { 
   --general-size: 18px;
   --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --planchete-title-size:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 

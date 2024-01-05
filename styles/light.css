@@ -1,33 +1,41 @@
 .page.theme_light {
-  --background-color: var(--light-background);
-  --button-color: var(--light-text-color);
-  --button-hover-color: var(--light-opacity-main-color);
+  --background-color: #FFF1F7;
+  --button-color: #353430;
+  --button-hover-color: rgba(50, 49, 45, 0.40);
   --toggle-color:transparent;
   --toggle-color-shadow: transparent;
-  --general-content-color: var(--light-main-color);
-  --title-color: var(--light-title-color);
-  --corner-color:var(--light-text-color);
-  --section-title:var(--light-text-color);
-  --color-subtitle:var(--light-text-color);
-  --section-text-color:var(--light-text-color);
+  --general-content-color: #FF8DCB;
+  --title-color: #FFC2E6;
+  --corner-color:#353430;
+  --section-title:#353430;
+  --color-subtitle:#353430;
+  --section-text-color:#353430;
   --background-image:url(../images/cover-image-light.png);
-  --background-color: var(--light-main-background); 
+  --background-color: #FFF1F7;
+  --focus-button-color: #353430;
+  --hover-link-color:#353430;
+  --general-content-color-shadow:#FF8DCB;
+  --focus-link-color:#353430;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-color: var(--light-background);
-  --button-color: var(--light-text-color);
-  --button-hover-color: var(--light-opacity-main-color);
-  --toggle-color:transparent;
-  --toggle-color-shadow: transparent;
-  --general-content-color: var(--light-main-color);
-  --title-color: var(--light-title-color);
-  --corner-color:var(--light-text-color);
-  --section-title:var(--light-text-color);
-  --color-subtitle:var(--light-text-color);
-  --section-text-color:var(--light-text-color);
-  --background-image:url(../images/cover-image-light.png);
-  --background-color: var(--light-main-background);
+    --background-color: #FFF1F7;
+    --button-color: #353430;
+    --button-hover-color: rgba(50, 49, 45, 0.40);
+    --toggle-color:transparent;
+    --toggle-color-shadow: transparent;
+    --general-content-color: #FF8DCB;
+    --title-color: #FFC2E6;
+    --corner-color:#353430;
+    --section-title:#353430;
+    --color-subtitle:#353430;
+    --section-text-color:#353430;
+    --background-image:url(../images/cover-image-light.png);
+    --background-color: #FFF1F7;
+    --focus-button-color: #353430;
+    --hover-link-color:#353430;
+    --general-content-color-shadow:#FF8DCB;
+    --focus-link-color:#353430;
     }
 } 

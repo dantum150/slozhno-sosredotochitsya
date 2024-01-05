@@ -15,7 +15,8 @@
   padding: 10px;
   align-items: center;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
 }
 
 .decorated__element {
@@ -28,17 +29,9 @@
   line-height: 25px;
   gap: 4px;
   position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.decorated__element::after {
-  content: "";
-  border-top: 1px solid var(--corner-color);
-  border-right: 1px solid var(--corner-color);
-  width: 25.038px;
-  height: 24.999px;
-  display: block;
+  top: 11px;
+  right: 37px;
+  text-transform: uppercase;
 }
 
 .decorated__element::before {
@@ -52,7 +45,7 @@
   box-shadow: 0 0 4px 2px var(--toggle-color);
   filter: drop-shadow(0px 0px 4px var(--toggle-color-shadow));
   position: absolute;
-  right: 9px;
+  left: 42px;
   top: 9px;
 }
 
@@ -91,7 +84,7 @@
 }
 
 .header__theme-menu-button:focus {
-  border-bottom: 1px solid rgba(255, 0, 112, 0.4);
+  border-bottom: 1px solid var(--focus-button-color);
 }
 
 .header__theme-menu-button_active {
@@ -201,11 +194,15 @@
   width: 0%;
   left: 0;
   bottom: 0;
-  background-color: #f1b2ce;
+  background-color: var(--hover-link-color);
   transition: 0.5s;
 }
 .section__text_link:hover::after {
   width: 100%;
+}
+
+.section__text_link:focus {
+  outline: 1px solid var(--focus-link-color);
 }
 
 .subtitle__weigth {
@@ -244,6 +241,18 @@ img {
 
 .footer .decorated__element::before {
   content: unset;
+}
+
+.decorated-zone::before {
+  content: "";
+  border-top: 1px solid var(--corner-color);
+  border-right: 1px solid var(--corner-color);
+  width: 25.038px;
+  height: 24.999px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .decorated-zone::after {
@@ -286,6 +295,11 @@ img {
 
   .decorated__element {
     top: 19px;
+    right: 48px;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
     right: 20px;
   }
 
@@ -312,12 +326,6 @@ img {
     grid-template-areas:
       "title cards"
       ". cards";
-  }
-
-  .section-why .section__cards,
-  .section-advices .section__cards {
-    display: grid;
-    grid-template-columns: 1fr;
   }
 
   .section-causes {
@@ -367,6 +375,7 @@ img {
 
 @media screen and (min-width: 1024px) {
   .header__title {
+    --general-content-color-shadow: #ff0070;
     font-size: var(--pc-title-size);
   }
 

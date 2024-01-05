@@ -1,33 +1,39 @@
 .page.theme_dark {
-  --title-color: var(--dark-title-color);
-  --general-content-color-shadow: var(--dark-main-color);
-  --button-color: var(--dark-main-color);
-  --button-hover-color: var(--drak-opacity-main-color);
-  --toggle-color: var(--dark-main-color);
-  --toggle-color-shadow: var(--dark-main-color);
-  --corner-color: var(--dark-main-color);
-  --color-subtitle:var(--dark-subtitle-color);
-  --general-content-color:var(--dark-main-color);
-  --section-title:var(--dark-main-color);
-  --section-text-color:var(--dark-text-color);
+  --title-color: #DB00FF;
+  --general-content-color-shadow: #FF0070;
+  --button-color: #FF0070;
+  --button-hover-color: rgba(255, 0, 112, 0.40);
+  --toggle-color: #FF0070;
+  --toggle-color-shadow: #FF0070;
+  --corner-color: #FF0070;
+  --color-subtitle:#000028;
+  --general-content-color:#FF0070;
+  --section-title:#FF0070;
+  --section-text-color:#F1B2CE;
   --background-image:url(../images/cover-image-dark.png);
-  --background-color: var(--dark-subtitle-color);
+  --background-color: #000028;
+  --focus-button-color: #FF0070;
+  --hover-link-color:#F1B2CE;
+  --focus-link-color:#F1B2CE;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --title-color: var(--dark-title-color);
-    --general-content-color-shadow: var(--dark-main-color);
-    --button-color: var(--dark-main-color);
-    --button-hover-color: var(--drak-opacity-main-color);
-    --toggle-color: var(--dark-main-color);
-    --toggle-color-shadow: var(--dark-main-color);
-    --corner-color: var(--dark-main-color);
-    --color-subtitle:var(--dark-subtitle-color);
-    --general-content-color:var(--dark-main-color);
-    --section-title:var(--dark-main-color);
-    --section-text-color:var(--dark-text-color);
+    --title-color: #DB00FF;
+    --general-content-color-shadow: #FF0070;
+    --button-color: #FF0070;
+    --button-hover-color: rgba(255, 0, 112, 0.40);
+    --toggle-color: #FF0070;
+    --toggle-color-shadow: #FF0070;
+    --corner-color: #FF0070;
+    --color-subtitle:#000028;
+    --general-content-color:#FF0070;
+    --section-title:#FF0070;
+    --section-text-color:#F1B2CE;
     --background-image:url(../images/cover-image-dark.png);
-    --background-color: var(--dark-subtitle-color);
+    --background-color: #000028;
+    --focus-button-color: #FF0070;
+    --hover-link-color:#F1B2CE;
+    --focus-link-color:#F1B2CE;
   }
 }
